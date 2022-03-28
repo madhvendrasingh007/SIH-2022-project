@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Sports</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="marks.css">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    </head>
+<head>
+    <script type="text/javascript">
+        window.onload = function () {
+            var chart = new CanvasJS.Chart("chartContainer",
+                {
+                    title: {
+                        text: "Sport Chart"
+                    },
+                    legend: {
+                        maxWidth: 3500,
+                        itemWidth: 120
+                    },
+                    data: [
+                        {
+                            type: "pie",
+                            showInLegend: true,
+                            legendText: "{indexLabel}",
+                            dataPoints: [
+                                { y: 35, indexLabel: "Cricket" },
+                                { y: 40, indexLabel: "BasketBall" },
+                                { y: 57, indexLabel: "Football" },
+                                { y: 10, indexLabel: "VolleyBall" },
+                            ]
+                        }
+                    ]
+                });
+            chart.render();
+        }
+    </script>
+    <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</head>
+
+<body>
+    <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+    <p>The Details of all types of activity are given below :<br>
+    <details>
+        <summary>
+            Sports Man Characerstics
+        </summary>
+        <ul>
+            <li> Team Management
+            </li>
+            <li>Physical Fitness</li>
+            <li></li>
+            <li>Music </li>
+        </ul>
+    </details>
+    </p>
+</body>
+
+</html>
