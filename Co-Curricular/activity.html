@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Co-Curricular</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="marks.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+</head>
+<head>
+    <script type="text/javascript">
+        window.onload = function () {
+            var chart = new CanvasJS.Chart("chartContainer",
+                {
+                    title: {
+                        text: "Co-Curricular Activity Chart"
+                    },
+                    legend: {
+                        maxWidth: 3500,
+                        itemWidth: 120
+                    },
+                    data: [
+                        {
+                            type: "pie",
+                            showInLegend: true,
+                            legendText: "{indexLabel}",
+                            dataPoints: [
+                                { y: 35, indexLabel: "Cultural" },
+                                { y: 40, indexLabel: "Mental Ability" },
+                                { y: 57, indexLabel: "Writing Skills" },
+                                { y: 10, indexLabel: "Communication Skills" },
+                                { y: 9, indexLabel: "Physical Activity" },
+                                { y: 7, indexLabel: "Art and Craft" }
+                            ]
+                        }
+                    ]
+                });
+            chart.render();
+        }
+    </script>
+    <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</head>
+
+<body>
+    <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+    <p>The Details of all types of activity are given below :<br>
+    <details>
+        <summary>
+            Cultural
+        </summary>
+        <ul>
+            <li>Singing</li>
+            <li>Dance</li>
+            <li>Drama</li>
+            <li>Instrumental Music</li>
+        </ul>
+    </details>
+    <details>
+        <summary>
+            Mental Ability
+        </summary>
+        <ul>
+            <li>Olympiad</li>
+            <li>GK Quiz</li>
+            <li>Logical Reasoning</li>
+            </li>
+        </ul>
+    </details>
+    <details>
+        <summary>
+            Communication Skills
+        </summary>
+        <ul>
+            <li>Debate Competitions</li>
+            <li>Speech</li>
+            <li>Group Discussion</li>
+        </ul>
+    </details>
+    <details>
+        <summary>
+            Writing Skills
+        </summary>
+        <ul>
+            <li>Story/poetry Writing</li>
+            <li>News letter/Articles </li>
+            <li>Magazine Writing</li>
+            </li>
+        </ul>
+    </details>
+    <details>
+        <summary>
+            Physical Activity
+        </summary>
+        <ul>
+            <li>Physical Fitness</li>
+            <li>Yoga</li>
+            <li>Sports</li>
+            <li>Martial Art</li>
+        </ul>
+    </details>
+    <details>
+        <summary>
+            Art and Craft
+        </summary>
+        <ul>
+            <li>Artist/Drawing</li>
+            <li>Best out of Waste</li>
+            <li>Sculpture making</li>
+        </ul>
+    </details>
+    </p>
+</body>
+
+</html>
