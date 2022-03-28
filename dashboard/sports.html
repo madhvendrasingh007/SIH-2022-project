@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="user-guide style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="sports style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+	<title>Sports</title>
+</head>
+
+
+<head>
+    <script type="text/javascript">
+        window.onload = function () {
+            var chart = new CanvasJS.Chart("chartContainer",
+                {
+                    title: {
+                        text: "Sport Chart"
+                    },
+                    legend: {
+                        maxWidth: 3500,
+                        itemWidth: 120
+                    },
+                    data: [
+                        {
+                            type: "pie",
+                            showInLegend: true,
+                            legendText: "{indexLabel}",
+                            dataPoints: [
+                                { y: 35, indexLabel: "Cricket" },
+                                { y: 40, indexLabel: "BasketBall" },
+                                { y: 57, indexLabel: "Football" },
+                                { y: 10, indexLabel: "VolleyBall" },
+                            ]
+                        }
+                    ]
+                });
+            chart.render();
+        }
+    </script>
+    <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</head>
+
+
+<body>
+	
+	<!-- SIDEBAR -->
+	<section id="sidebar">
+		<a href="#" class="brand"><i class='bx bxs-smile icon'></i> User Guide</a>
+		<ul class="side-menu">
+			<li><a href="index.html" class="active"><i class='bx bxs-dashboard icon' ></i> Dashboard</a></li>
+			<li class="divider" data-text="main">Main</li>
+			<li>
+				<a href="#"><i class='bx bxs-inbox icon' ></i> Progress <i class='bx bx-chevron-right icon-right' ></i></a>
+				<ul class="side-dropdown">
+					<li><a href="Acad index.html">Academic</a></li>
+					<li><a href="activity.html" >Co-Curricular</a></li>
+					<li><a href="#">Attendence</a></li>
+					<li><a href="sports.html" style="background: var(--blue); color: var(--light); text-align: center; justify-content: center;">Sports</a></li>
+				</ul>
+			</li>
+			<li><a href="feedback index.html"><i class='bx bx-spreadsheet icon' style="font-size: 17px;"></i> Feedback Form</a></li>
+			<li><a href="#"><i class='bx bxs-widget icon' ></i> Resources</a></li>
+			<li class="divider" data-text="table and forms">Contact and forms</li>
+			<li><a href="contact index.html"><i class='bx bx-table icon' ></i> Contact</a></li>
+			<li>
+				<a href="#"><i class='bx bxs-notepad icon' ></i> Help <i class='bx bx-chevron-right icon-right' ></i></a>
+				<ul class="side-dropdown">
+					<li><a href="user-guide index.html" >User Guide</a></li>
+					<li><a href="faq index.html" >FAQ</a></li>
+					<li><a href="TC index.html">Terms & Condition</a></li>
+					<li><a href="doc index.html">Documentation</a></li>
+				</ul>
+			</li>
+		</ul>
+		<div class="ads">
+			<div class="wrapper">
+				<a href="#" class="btn-upgrade">Upgrade</a>
+				<p>Become a <span>PRO</span> member and enjoy <span>All Features</span></p>
+			</div>
+		</div>
+	</section>
+	<!-- SIDEBAR -->
+
+	<!-- NAVBAR -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu toggle-sidebar' ></i>
+			<form action="#">
+				<div class="form-group">
+					<input type="text" placeholder="Search...">
+					<i class='bx bx-search icon' ></i>
+				</div>
+			</form>
+			<a href="#" class="nav-link">
+				<i class='bx bxs-bell icon' ></i>
+				<span class="badge">5</span>
+			</a>
+			<a href="#" class="nav-link">
+				<i class='bx bxs-message-square-dots icon' ></i>
+				<span class="badge">8</span>
+			</a>
+			<span class="divider"></span>
+			<div class="profile">
+				<img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cGVvcGxlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+				<ul class="profile-link">
+					<li><a href="#"><i class='bx bxs-user-circle icon' ></i> Profile</a></li>
+					<li><a href="#"><i class='bx bxs-cog' ></i> Settings</a></li>
+					<li><a href="#"><i class='bx bxs-log-out-circle' ></i> Logout</a></li>
+				</ul>
+			</div>
+		</nav>
+		<!-- NAVBAR -->
+		
+		<!-- MAIN -->
+		<main>
+			<h1 class="title" style="text-align: left;">Hey Jarvis !!!</h1>
+			<ul class="breadcrumbs">
+				<li><a href="#">Home</a></li>
+				<li class="divider">/</li>
+				<li><a href="#" class="active" >Sports</a></li>
+			</ul>
+			
+			<div class="data">
+				<div class="content-data">
+					<div class="head">
+						<h3>Sports</h3>
+						<div class="menu">
+							<i class='bx bx-dots-horizontal-rounded icon'></i>
+							<ul class="menu-link">
+								<li><a href="#">Edit</a></li>
+								<li><a href="#">Save</a></li>
+								<li><a href="#">Remove</a></li>
+							</ul>
+						</div>
+					</div>
+					
+                    
+                    <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+					<br><br>
+    <p>The Details of all types of activity are given below :<br>
+    <details>
+        <summary>
+            Sports Man Characerstics
+        </summary>
+        <ul>
+            <li> Team Management
+            </li>
+            <li>Physical Fitness</li>
+            <li></li>
+            <li>Music </li>
+        </ul>
+    </details>
+    </p>
+	        			</div>
+			</div>
+		</main>
+		<!-- MAIN -->
+	</section>
+	<!-- NAVBAR -->
+
+	<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+	<script src="sports script.js"></script>
+</body>
+</html>
